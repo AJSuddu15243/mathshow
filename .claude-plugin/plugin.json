@@ -1,0 +1,5 @@
+{
+  "name": "mathshow",
+  "version": "0.1.0",
+  "description": "Render math notation as boxed images inline in Ghostty / Kitty-graphics terminals."
+}

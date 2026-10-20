@@ -1,0 +1,6 @@
+node_modules/
+__pycache__/
+.pending.json
+.pending.png
+.last.png
+.log

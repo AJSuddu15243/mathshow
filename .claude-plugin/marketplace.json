@@ -1,0 +1,7 @@
+{
+  "name": "mathshow",
+  "owner": { "name": "AJSuddu15243" },
+  "plugins": [
+    { "name": "mathshow", "source": "./", "description": "Render math notation as boxed images inline in Ghostty / Kitty-graphics terminals." }
+  ]
+}

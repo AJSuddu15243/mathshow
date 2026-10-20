@@ -1,0 +1,7 @@
+{
+  "name": "mathshow",
+  "version": "0.1.0",
+  "description": "Render math as a boxed image inline in Kitty-graphics terminals (Ghostty)",
+  "private": true,
+  "dependencies": { "mathjax-full": "^3.2.2" }
+}
