@@ -17,4 +17,9 @@ class T(unittest.TestCase):
             self.assertEqual(out.returncode, 0, out.stderr)
             self.assertRegex(out.stdout, r'width="[\d.]+ex" height="[\d.]+ex"')
 
+    def test_bad_math_fails_instead_of_drawing_an_error(self):
+        for tex in (r"\frac{", r"\undefinedmacro{x}"):
+            out = subprocess.run(["node", os.path.join(HERE, "render.mjs"), tex], capture_output=True, text=True)
+            self.assertEqual(out.returncode, 1, tex)
+
 if __name__ == "__main__": unittest.main()

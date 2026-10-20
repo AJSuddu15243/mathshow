@@ -4,11 +4,6 @@ Proper math notation inside your terminal chat. Integrals, derivatives, sums, Gr
 
 Built for [Claude Code](https://claude.com/claude-code): the agent writes an explanation, calls `mathshow`, and the equation appears in the chat. No changes to Claude Code itself.
 
-<!-- Screenshots: add the files below to docs/screenshots/ -->
-![Integral and derivative](docs/screenshots/integral.png)
-![Chemical equation](docs/screenshots/chemistry.png)
-![Worked derivation](docs/screenshots/derivation.png)
-
 ## Supported terminals
 
 mathshow draws with the [Kitty graphics protocol](https://sw.kovidgoyal.net/kitty/graphics-protocol/).
@@ -75,3 +70,7 @@ Input is LaTeX math syntax, plus `\ce{}` for chemistry and the `physics` package
 ```sh
 python3 -m unittest discover -s tests
 ```
+
+## License
+
+MIT, see [LICENSE](LICENSE).

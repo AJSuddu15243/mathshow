@@ -21,6 +21,7 @@ Draws an equation as a boxed image over reserved rows in the terminal chat. Work
 ## Rules
 
 - One image per reply. Put several equations in one call (`\quad` between them, or `\begin{aligned} a &= b \\ c &= d \end{aligned}` for steps).
+- A very long single-line equation is shrunk to fit the terminal width and becomes unreadable: split it with `aligned` instead.
 - Keep the explanation above the block, and make the math the last thing in the reply.
 - Quote the tex in single quotes; escape a literal `'` as `'\''`.
 - If the command errors ("bad math", "no terminal found", "command not found"), say so and fall back to plain text or Unicode (ε, δ, π, μ, ∫, ∂, √).
